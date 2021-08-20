@@ -1,0 +1,15 @@
+<div style="margin-top:55px; padding-top:55px;" class="container-fluid text-sm-left p-5 text-black "> <!-- bg-light is background color & p-5 is padding -->
+    <h1 class="display-2">
+      <%= @friend.first_name %>
+      <%= @friend.last_name %>
+    </h1>
+    <p class="lead">
+      <%= @friend.email %>  |
+      <%= @friend.phone %>  |
+      <%= @friend.twitter %> 
+      </p>
+      <br/>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+    <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+</div>
+
